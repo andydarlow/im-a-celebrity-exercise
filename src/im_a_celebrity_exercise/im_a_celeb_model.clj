@@ -13,7 +13,8 @@
 
 (defn find-celebrity-record
   "gives you the celebrity record for the 
-   celeb with the id provided"
+   celeb with the id provided. the record will 
+   comtain the id of the celeb and their full name"
   [celeb-list celeb-id]
   (find-first #(= celeb-id (:celeb-id %)) celeb-list))
 
