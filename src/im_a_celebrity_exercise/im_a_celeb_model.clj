@@ -11,21 +11,24 @@
 
 ;;-------------------- dealing with celebs ----------------
 
+(defn find-celebrity-record
+  "gives you the celebrity record for the 
+   celeb with the id provided"
+  [celeb-list celeb-id]
+  (find-first #(= celeb-id (:celeb-id %)) celeb-list))
 
 (defn celebrity-name
   "gives the name of the celeb given their id"
   [celeb-list celeb-id]
-  (->>  celeb-list
-        (find-first #(= celeb-id (:celeb-id %)))
-        (:name)))
+  (:name (find-celebrity-record celeb-list celeb-id)))
 
 (defn celebrity-names
   "gives the name of the celeb given their ids
    any unknown names will be ignored"
   [celebs celeb-ids]
   (->> celeb-ids
-       (map #(celebrity-name celebs %))
-       (filter (comp not nil?))))
+       (map (partial celebrity-name celebs))
+       (remove nil?)))
 
 ;;-------------------- functions for process a round of votes ----------------
 

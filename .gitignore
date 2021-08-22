@@ -1,0 +1,10 @@
+
+target/default+test+test/classes/META-INF/maven/im-a-celebrity-exercise/im-a-celebrity-exercise/pom.properties
+target/default+test+test/stale/leiningen.core.classpath.extract-native-dependencies
+target/default/classes/META-INF/maven/im-a-celebrity-exercise/im-a-celebrity-exercise/pom.properties
+target/default/repl-port
+target/default/stale/leiningen.core.classpath.extract-native-dependencies
+.nrepl-port
+.lsp/sqlite.db
+.lein-failures
+.eastwood
