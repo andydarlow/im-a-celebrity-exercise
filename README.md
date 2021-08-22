@@ -1,6 +1,6 @@
 # im-a-celebrety-exercise (Clojure)
 
-This is a simple excercide for a friend who was interested
+This is a simple excercise for a friend who was interested
 in getting to grips with clojure (and coding generally). 
 I gave him this simple exercise/possible answers here. So
 he can get to learn some basic clojure. 
