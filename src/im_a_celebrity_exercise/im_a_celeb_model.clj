@@ -3,12 +3,11 @@
 
 ;;---------------- utils -----------------------------
 
-(defn find-first
+
+(def find-first
   "util to give you the first element that
    matches the predicate function"
-  [predicate list]
-  (first (filter predicate list)))
-
+  (comp first filter))
 
 ;;-------------------- dealing with celebs ----------------
 
